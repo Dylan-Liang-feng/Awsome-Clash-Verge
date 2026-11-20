@@ -6,6 +6,8 @@
 
 同样，你也可以说「让电脑上的微信直连」。客户端会在本机查找对应程序，供你核对。使用代理线路需要自己的代理节点或订阅，使用自然语言生成规则需要配置自己的模型 API。
 
+本项目基于 Clash Verge Rev，由 [@Dylan-Liang-feng](https://github.com/Dylan-Liang-feng) 开发和维护 AI 规则助手版本。
+
 [下载 Windows 版](https://github.com/Dylan-Liang-feng/clash-verge-ai/releases/latest) · [使用与源码构建](LOCAL-AI.md) · [开发过程与测试](docs/development-journey.md) · [数据与隐私](PRIVACY.md)
 
 ## 第一次启动
