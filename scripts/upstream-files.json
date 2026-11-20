@@ -1,0 +1,42 @@
+[
+  {
+    "path": "verge-mihomo.exe",
+    "sha256": "0B4C7353057A78DE8A09DB445351AADEC7D72A4F48ADC7D99691F3C5FF74D3DA"
+  },
+  {
+    "path": "verge-mihomo-alpha.exe",
+    "sha256": "1404A25B977251C90693543DA6E83320355EE2FE9D24D2727F20751329A127C9"
+  },
+  {
+    "path": "resources/ASN.mmdb",
+    "sha256": "3169B9EA7DAD762F6837B95408DADC1173F47BE33BE2D83B6C90E67A57A7EB2E"
+  },
+  {
+    "path": "resources/clash-verge-service-install.exe",
+    "sha256": "432A81A6FCD636B0ED2472F224D178FE02F0B3422FFF51E3F76E625E44BC1574"
+  },
+  {
+    "path": "resources/clash-verge-service-uninstall.exe",
+    "sha256": "29BAEB0AC3CBF4D291A28F6C3C520E0A9EDCE1B2D047B475FB1DF645BAFD1A22"
+  },
+  {
+    "path": "resources/clash-verge-service.exe",
+    "sha256": "56D68AFD65CF925293B85A0E2479AAC8C9C6BD032769541668C23D79CF1B9AB3"
+  },
+  {
+    "path": "resources/Country.mmdb",
+    "sha256": "F604D54EB3D5A6FDAB9747C0C62F0B489134B6D94DF9E9EB20F1C5E2A537DBFA"
+  },
+  {
+    "path": "resources/enableLoopback.exe",
+    "sha256": "F0C328376BD5AE0EF3B0EB19AC1F343C24A9ABFE7BC1008D3B2F6EF3573D04D1"
+  },
+  {
+    "path": "resources/geoip.dat",
+    "sha256": "06C1D50D0013AF57FFE78C5AF93F0DC6AA998890F3EE231393816F9117810C4A"
+  },
+  {
+    "path": "resources/geosite.dat",
+    "sha256": "3FEE9B84EFCE1EF142974A18B48B9B12D2CF8CCB8017DD4EC16E3906BCB7DA69"
+  }
+]

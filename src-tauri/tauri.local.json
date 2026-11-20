@@ -1,0 +1,9 @@
+{
+  "identifier": "io.github.clash-verge-rev.clash-verge-rev.local-ai",
+  "productName": "Clash Verge Local AI",
+  "bundle": { "active": false, "createUpdaterArtifacts": false },
+  "plugins": {
+    "deep-link": { "desktop": { "schemes": ["clash-verge-local-ai"] } },
+    "updater": { "endpoints": [] }
+  }
+}
