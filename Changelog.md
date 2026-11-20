@@ -1,3 +1,5 @@
+**Clash Verge AI 的发行记录见[版本说明与修改记录](docs/release-notes.md)。** 下文保留上游 Clash Verge Rev 的更新日志。
+
 <!-- Release-notes skeleton. Entries accumulate in ./Changelog.md as PRs land;
      before publishing a release, distill them:
      - user-visible changes only — no dev tooling, CI fixes, or refactors whose

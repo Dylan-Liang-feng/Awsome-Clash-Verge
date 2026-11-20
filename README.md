@@ -8,7 +8,7 @@
 
 本项目基于 Clash Verge Rev，由 [@Dylan-Liang-feng](https://github.com/Dylan-Liang-feng) 开发和维护 AI 规则助手版本。
 
-[下载 Windows 版](https://github.com/Dylan-Liang-feng/clash-verge-ai/releases/tag/v0.1.1) · [使用与源码构建](LOCAL-AI.md) · [开发过程与测试](docs/development-journey.md) · [数据与隐私](PRIVACY.md)
+[下载 Windows 版](https://github.com/Dylan-Liang-feng/Awsome-Clash-Verge/releases/tag/v0.1.1) · [版本说明与修改记录](docs/release-notes.md) · [使用与源码构建](LOCAL-AI.md) · [开发过程与测试](docs/development-journey.md) · [数据与隐私](PRIVACY.md)
 
 ## 第一次启动
 
