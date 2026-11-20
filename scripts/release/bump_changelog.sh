@@ -2,14 +2,14 @@
 set -euo pipefail
 
 # - prepend ./Changelog.md to ./docs/Changelog.history.md
-# - overwrite ./Changelog.md with ./template/Changelog.md
+# - overwrite ./Changelog.md with ./scripts/release/changelog-template.md
 
-ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+ROOT_DIR="$(cd "$(dirname "$0")/../.." && pwd)"
 cd "$ROOT_DIR"
 
 CHANGELOG="Changelog.md"
 HISTORY="docs/Changelog.history.md"
-TEMPLATE="template/Changelog.md"
+TEMPLATE="scripts/release/changelog-template.md"
 
 timestamp() { date +"%Y%m%d%H%M%S"; }
 

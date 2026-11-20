@@ -58,7 +58,7 @@ the ownership evidence the AI-slop review evaluates (see
     after editing it, run `gh aw compile` and commit the regenerated
     `pr-ai-slop-review.lock.yml`. Never edit the lock file directly.
 11. **Changelog.** Entries follow the rules in
-    [`template/Changelog.md`](template/Changelog.md): one line per
+    [`scripts/release/changelog-template.md`](scripts/release/changelog-template.md): one line per
     user-visible change, no internals.
 
 ## Issue and PR Workflows

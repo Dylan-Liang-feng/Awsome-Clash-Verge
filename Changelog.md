@@ -18,7 +18,7 @@
      - platform entries sit under their platform heading (bold, emoji
        prefixed, ordered Windows/macOS/Linux, combined for pairs like
        macOS/Linux) at the end of their section;
-       scripts-workflow/group_platforms.sh regroups, --check verifies
+       scripts/release/group_platforms.sh regroups, --check verifies
      HTML comments are stripped by the update dialog's sanitizer and hidden on
      GitHub, so they never reach users. -->
 ## 本地测试版

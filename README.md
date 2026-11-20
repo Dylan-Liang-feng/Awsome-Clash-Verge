@@ -8,7 +8,7 @@
 
 本项目基于 Clash Verge Rev，由 [@Dylan-Liang-feng](https://github.com/Dylan-Liang-feng) 开发和维护 AI 规则助手版本。
 
-[下载 Windows 版](https://github.com/Dylan-Liang-feng/Awsome-Clash-Verge/releases/tag/v0.1.1) · [版本说明与修改记录](docs/release-notes.md) · [使用与源码构建](LOCAL-AI.md) · [开发过程与测试](docs/development-journey.md) · [数据与隐私](PRIVACY.md)
+[下载 Windows 版](https://github.com/Dylan-Liang-feng/Awsome-Clash-Verge/releases/tag/v0.1.1) · [版本说明与修改记录](docs/release-notes.md) · [使用与源码构建](docs/guide.md) · [开发过程与测试](docs/development-journey.md) · [数据与隐私](PRIVACY.md)
 
 ## 第一次启动
 
@@ -28,8 +28,8 @@
 | 某大学官网和它的子域名走代理 | 核对官网来源、匹配后缀和所选代理组 |
 | 只让浏览器访问某网站时完全绕过 TUN | 需要按使用指南启用专用系统 PAC，并使用遵循它的浏览器 |
 
-普通 `DIRECT` 规则改变 Mihomo 的出站。已被 TUN 捕获的连接仍会出现在连接页。指定网页通过物理网卡出站另有 Windows 浏览器 PAC 模式，其适用条件见[操作说明](LOCAL-AI.md)。
+普通 `DIRECT` 规则改变 Mihomo 的出站。已被 TUN 捕获的连接仍会出现在连接页。指定网页通过物理网卡出站另有 Windows 浏览器 PAC 模式，其适用条件见[操作说明](docs/guide.md)。
 
 ## 来源与许可证
 
-这是基于上游的独立修改版，保留原项目的 GPLv3 许可证和版权声明。源代码、上游基线与随运行环境取得的第三方组件见[来源说明](THIRD_PARTY.md)和[许可证](LICENSE)。
+这是基于上游的独立修改版，保留原项目的 GPLv3 许可证和版权声明。源代码、上游基线与随运行环境取得的第三方组件见[来源说明](THIRD_PARTY.md)和[许可证](LICENSE)。上游项目的多语言介绍和界面截图可在[原版 2.5.10 文档](https://github.com/clash-verge-rev/clash-verge-rev/tree/v2.5.10/docs)中查看。

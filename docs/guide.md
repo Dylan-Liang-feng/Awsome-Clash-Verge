@@ -74,7 +74,7 @@ cargo build --profile fast-release --locked --features ai-desktop --bin clash-ve
 | 数据目录中的文件 | 构建输入 |
 | --- | --- |
 | country.mmdb、asn.mmdb | 从 DB-IP 官网取得 2026-11 的 Country Lite、ASN Lite MMDB，解压 gzip 并分别重命名 |
-| geoip.dat、dlc.dat | 来自 THIRD_PARTY.md 指定的 v2fly 发布标签 |
+| geoip.dat、dlc.dat | 来自[第三方组件说明](../THIRD_PARTY.md)指定的 v2fly 发布标签 |
 | MicrosoftEdgeWebView2RuntimeInstallerX64.exe | [微软固定版本下载](https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/63f7af19-5d22-43ab-af18-239a7b23b84c/MicrosoftEdgeWebView2RuntimeInstallerX64.exe)，构建前核对 Authenticode 发布者为 Microsoft Corporation |
 
 ```powershell

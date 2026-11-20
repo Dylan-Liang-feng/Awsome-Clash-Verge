@@ -129,7 +129,7 @@ export default defineConfig([
             'eslint.config.ts',
             `vite.config.mts`,
             'scripts/*.mjs',
-            'scripts-workflow/*.mjs',
+            'scripts/release/*.mjs',
             'tests/*.ts',
             'src/polyfills/*.js',
             'tests/*.mjs',
@@ -240,7 +240,7 @@ export default defineConfig([
     },
   },
   {
-    files: ['scripts-workflow/*.mjs'],
+    files: ['scripts/release/*.mjs'],
     languageOptions: {
       globals: globals.node,
     },

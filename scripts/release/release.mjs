@@ -753,7 +753,7 @@ function nextDev() {
   const minorTag = `v${major}.${minorVersion + 1n}.0`
   const nextTag = minor ? minorTag : patchTag
   run('pnpm', ['release-version', nextTag])
-  run('bash', ['scripts-workflow/bump_changelog.sh'])
+  run('bash', ['scripts/release/bump_changelog.sh'])
   const changelog = read('Changelog.md')
   if (!changelog.includes('## v(Version Goes Here)'))
     throw new Error('The changelog template has no version placeholder.')
