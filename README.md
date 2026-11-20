@@ -8,17 +8,16 @@
 
 本项目基于 Clash Verge Rev，由 [@Dylan-Liang-feng](https://github.com/Dylan-Liang-feng) 开发和维护 AI 规则助手版本。
 
-[下载 Windows 版](https://github.com/Dylan-Liang-feng/clash-verge-ai/releases/latest) · [使用与源码构建](LOCAL-AI.md) · [开发过程与测试](docs/development-journey.md) · [数据与隐私](PRIVACY.md)
+[下载 Windows 版](https://github.com/Dylan-Liang-feng/clash-verge-ai/releases/tag/v0.1.1) · [使用与源码构建](LOCAL-AI.md) · [开发过程与测试](docs/development-journey.md) · [数据与隐私](PRIVACY.md)
 
 ## 第一次启动
 
-1. 从 Release 下载 Windows x64 ZIP，解压到一个可以长期保留、当前用户有写入权限的目录。压缩包内含编译好的 `clash-verge.exe`。
-2. 从托盘退出正在运行的 Clash Verge。日常版与原版共用配置和 Windows 系统服务，两者轮流运行。需要保留现状时，可先使用客户端的配置备份功能。
-3. 双击 `Start-Clash-Verge-AI.cmd`。脚本优先从已安装的官方 2.5.10 校验并复制十个运行组件。如果安装在自定义目录，可在解压目录执行 `.\prepare-windows.ps1 -UpstreamDirectory 'D:\Apps\Clash Verge'`。如果没有可用组件，安装 [7-Zip](https://www.7-zip.org/) 后再次运行启动脚本，它会下载固定版本的官方安装包、校验 SHA-256 并解压所需文件。系统需要 WebView2 Runtime。
-4. 已有订阅的用户可以直接选择订阅。首次使用者请导入自己的订阅。需要整机接管时选择「规则」模式并开启「虚拟网卡模式」，按客户端提示安装服务。
-5. 在「订阅」右键目标订阅，选择「编辑规则 → 模型 API 设置」，填写兼容 Chat Completions 的 API 地址、模型 ID 和自己的密钥，点「保存并测试」。回到编辑器，填写需求、选择代理组，点「生成前置规则」。核对右侧预览后点「保存」。
+1. 在 v0.1.1 预发行页下载 **Clash-Verge-AI-0.1.1-windows-x64-setup.exe**，双击安装。已在使用原版的用户，先从托盘退出 Clash Verge。
+2. 安装包自带内核、规则数据和 Windows x64 WebView2 离线安装程序。可在运行前用 `Get-FileHash` 核对 Release 中的 SHA256SUMS.txt。
+3. 打开桌面上的 **Clash Verge AI**。首次使用请导入自己的订阅；需要整机接管时选择「规则」并启用虚拟网卡，按提示授权。日常版与原版共享配置和系统服务，两套客户端轮流运行。
+4. 在「订阅」右键目标订阅，打开「编辑规则 → 模型 API 设置」，填写自己的 API 地址、模型 ID 和密钥。生成规则后先核对预览，再保存。导入在线订阅和调用外部模型需要联网。
 
-第一次准备完运行组件，以后可以直接启动 `clash-verge.exe`。切回原版时先从托盘退出本版；已保存的日常订阅规则会保留。Release 同时提供 SHA256SUMS.txt，下载后用 PowerShell 的 `Get-FileHash` 核对 ZIP。
+本次预发行等待全新 Windows 电脑上的离线安装、原版共存及 TUN 授权实测。首次测试可先断网、打开首页，再导入本地合成的 DIRECT 配置；恢复网络后试用自己的订阅。卸载 AI 版后，共享配置和 ProgramData 中的共享服务保留。
 
 ## 规则示例
 

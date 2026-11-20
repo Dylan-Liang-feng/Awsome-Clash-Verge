@@ -69,7 +69,20 @@ $env:CARGO_PROFILE_FAST_RELEASE_OPT_LEVEL = '1'
 cargo build --profile fast-release --locked --features ai-desktop --bin clash-verge
 ```
 
-生成的程序是 `target/fast-release/clash-verge.exe`。在新目录放入这个文件，以及 `scripts/` 下的 `Start-Clash-Verge-AI.cmd`、`prepare-windows.ps1` 和 `upstream-files.json`，即可用启动脚本准备与发行版一致的运行组件。公开包另附使用说明、隐私说明和许可证。
+生成的程序是 `target/fast-release/clash-verge.exe`。v0.1.1 安装包使用 NSIS 3.11（Tauri binary-releases 的 Windows 工具包）和 Python 3.11 或更新版本。将官方 2.5.10 安装包校验后解包到一个临时目录，使用其中两份 Mihomo 与三份服务程序。用下表列出的文件准备单独的数据目录。打包脚本逐项校验固定的 SHA-256，并生成安装、卸载清单和安装包校验文件。
+
+| 数据目录中的文件 | 构建输入 |
+| --- | --- |
+| country.mmdb、asn.mmdb | 从 DB-IP 官网取得 2026-11 的 Country Lite、ASN Lite MMDB，解压 gzip 并分别重命名 |
+| geoip.dat、dlc.dat | 来自 THIRD_PARTY.md 指定的 v2fly 发布标签 |
+| MicrosoftEdgeWebView2RuntimeInstallerX64.exe | [微软固定版本下载](https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/63f7af19-5d22-43ab-af18-239a7b23b84c/MicrosoftEdgeWebView2RuntimeInstallerX64.exe)，构建前核对 Authenticode 发布者为 Microsoft Corporation |
+
+```powershell
+python scripts/package-offline-windows.py --binary target/fast-release/clash-verge.exe --upstream C:/build/upstream --data C:/build/data --makensis C:/build/nsis/makensis.exe --output C:/build/new-output
+python scripts/verify-offline-windows.py --build C:/build/new-output --nsis C:/build/nsis --sevenzip C:/build/7-Zip/7z.exe
+```
+
+v0.1.0 的脚本和组件清单用于旧便携包。离线安装包只包含打包脚本明确列出的文件。
 
 ## 构建独立配置的测试版
 
